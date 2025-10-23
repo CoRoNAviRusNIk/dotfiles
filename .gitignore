@@ -1,0 +1,3 @@
+echo "*.log" >> .gitignore
+echo "*.cache" >> .gitignore
+echo "*~" >> .gitignore
