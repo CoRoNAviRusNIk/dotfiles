@@ -1,0 +1,106 @@
+@import "colors.css";
+
+* {
+    font-family: "Cascadia Mono Medium", "JetBrainsMono Nerd Font Propo";
+    font-size: 15px;
+    padding: 1px;
+    margin: 0;
+}
+
+#waybar {
+    background: @surface;
+    color: @on_surface;
+
+}
+
+
+/**
+ *      _       __ _   
+ *     | | ___ / _| |_ 
+ *     | |/ _ \ |_| __|
+ *     | |  __/  _| |_ 
+ *     |_|\___|_|  \__|
+ *                     
+ */
+
+
+
+#workspaces button {
+    padding-left: 0.7em;
+    color: #ffffff;
+}
+
+#workspaces button.empty {
+    color: #8a8a8a;
+}
+
+
+
+
+
+/**
+ *                _     _     _ _      
+ *      _ __ ___ (_) __| | __| | | ___ 
+ *     | '_ ` _ \| |/ _` |/ _` | |/ _ \
+ *     | | | | | | | (_| | (_| | |  __/
+ *     |_| |_| |_|_|\__,_|\__,_|_|\___|
+ *                                     
+ */
+
+
+#clock {
+    font-size: 15px;
+    padding-right: 0.85em;
+}
+
+
+/**
+ *           _       _     _   
+ *      _ __(_) __ _| |__ | |_ 
+ *     | '__| |/ _` | '_ \| __|
+ *     | |  | | (_| | | | | |_ 
+ *     |_|  |_|\__, |_| |_|\__|
+ *             |___/           
+ */
+
+
+#wireplumber {
+    font-size: 17px;
+    padding-right: 0.85em;
+}
+
+
+#custom-power {
+    padding-right: 0.85em;
+}
+
+
+#network{
+    padding-right: 0.85em;
+}
+
+
+#battery {
+    padding-right: 0.85em;
+}
+
+
+#language {
+    padding-right: 0.85em;
+}
+
+
+#tray {
+    padding-right: 0.85em;
+}
+
+
+#custom-text {
+    padding-right: 0.85em;
+    color: #8a8a8a;
+}
+
+
+
+
+
