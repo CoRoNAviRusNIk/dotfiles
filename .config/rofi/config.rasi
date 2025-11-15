@@ -1,0 +1,10 @@
+configuration {
+    display-drun: "Apps:";
+    display-window: "Win:";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 10";
+    modi: "window,run,drun";
+    show-icons: false;
+}
+
+@theme "current.rasi"

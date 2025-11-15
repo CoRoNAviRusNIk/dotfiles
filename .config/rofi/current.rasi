@@ -1,0 +1,95 @@
+@import "colors.rasi"
+
+* {
+    dark-bg:           @surface-dim;
+    light-fg:          @on-surface;
+    highlight-color:   @primary;
+    separator-color:   @outline-variant;
+    placeholder-color: @on-surface-variant;
+
+    text-color:     @light-fg;
+    background-color: @dark-bg;
+}
+
+window {
+    background-color: @dark-bg;
+    padding:          10px;
+    width:            300px;
+    location:         center;
+    anchor:           center;
+    border:           1px;
+    border-color:     @separator-color;
+    border-radius:    0;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 0;
+}
+
+inputbar {
+    children:       [ prompt, entry, num-rows ]; 
+    spacing:        0;
+    padding:        5px 15px 10px 15px; 
+    background-color: @dark-bg;
+    
+    border: 0 0 1px 0;
+    border-color: @separator-color;
+}
+
+prompt {
+    padding:        0 10px 0 0;
+    text-color:     @light-fg;
+}
+
+entry {
+    placeholder:       "search";
+    placeholder-color: @placeholder-color;
+    padding:           0;
+    text-color:        @light-fg;
+}
+
+num-rows {
+    padding:        0 0 0 10px;
+    text-color:     @highlight-color;
+}
+
+listview {
+    scrollbar:        true;
+    spacing:          0;
+    padding:          5px 0 0 0;
+    columns:          1;
+    lines:            15;
+    background-color: @dark-bg;
+}
+
+scrollbar {
+    width: 2px;
+    border: 0;
+    handle-width: 2px;
+    background-color: @dark-bg;
+    handle-color: @separator-color;
+}
+
+element {
+    padding:          5px 15px;
+    background-color: @dark-bg;
+    text-color:       @light-fg;
+}
+
+element selected {
+    text-color:       #88C0D0;
+    border:           0;
+}
+
+element-icon {
+    enabled:          false;
+}
+
+mode-switcher {
+    enabled:          false;
+}
+
+message {
+    enabled:          false;
+}

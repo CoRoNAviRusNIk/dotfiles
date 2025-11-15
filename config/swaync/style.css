@@ -1,0 +1,103 @@
+:root {
+  --cc-bg: rgba(0, 0, 0, 0.95); /* Почти черный фон для Control Center */
+  --noti-border-color: rgba(20, 20, 20, 0.8); /* Очень темная рамка */
+  --noti-bg: 10, 10, 10; /* Темный, почти черный фон уведомлений */
+  --noti-bg-alpha: 0.9;
+  --text-color: rgb(230, 230, 230); /* Светлый, но не чисто белый текст */
+  --text-color-disabled: rgb(80, 80, 80); /* Более тусклый текст для неактивных элементов */
+  --border-radius: 6px; 
+  --border: 2px solid var(--noti-border-color);
+  --font-size-body: 15px;
+  --font-size-summary: 16px;
+  --notification-icon-size: 50px;
+}
+
+notificationwindow, blankwindow {
+  background: transparent;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content {
+  margin-left: 2px;
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-icon {
+  min-width: var(--notification-icon-size); 
+  min-height: var(--notification-icon-size);
+  max-width: var(--notification-icon-size); 
+  max-height: var(--notification-icon-size);
+  margin-right: 0;
+}
+
+
+.notification-row .notification-background .notification {
+  background: rgba(var(--noti-bg), var(--noti-bg-alpha));
+  border: var(--border);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+}
+
+.notification-row .notification-background .notification .notification-default-action {
+  color: var(--text-color);
+  background: transparent;
+  padding: 8px 12px 8px 16px;
+}
+
+.notification-row .notification-background .notification .notification-default-action:hover {
+  background: rgba(40, 40, 40, 0.4); /* Темнее при наведении */
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content .summary,
+.notification-row .notification-background .notification .notification-default-action .notification-content .body,
+.notification-row .notification-background .notification .notification-default-action .notification-content .time {
+  color: var(--text-color);
+  background: transparent;
+  font-family: "Cascadia Mono Medium", "JetBrainsMono Nerd Font Propo";
+}
+
+.close-button {
+  background: transparent;
+  color: var(--text-color);
+  border: none;
+  margin: 4px; /* Меньшие отступы для кнопки закрытия */
+  padding: 4px;
+  opacity: 0.7; /* Слегка затемненная по умолчанию */
+}
+
+.close-button:hover {
+  background: rgba(60, 60, 60, 0.6); /* Темнее при наведении */
+  opacity: 1; /* Полная видимость при наведении */
+}
+
+.control-center {
+  background: var(--cc-bg);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Более выраженная тень для Control Center */
+  border: 1px solid rgba(30, 30, 30, 0.8); /* Тонкая темная рамка */
+}
+
+.widget {
+  background: rgba(20, 20, 20, 0.7); /* Темный фон для виджетов */
+  color: var(--text-color);
+  margin: 6px;
+  border-radius: var(--border-radius);
+  border: 1px solid rgba(40, 40, 40, 0.6); /* Темная рамка виджетов */
+  padding: 8px; /* Отступы внутри виджетов */
+}
+
+.widget-title > label,
+.widget-dnd label,
+.widget-inhibitors > label {
+  color: var(--text-color);
+  font-weight: bold; /* Жирный текст для заголовков */
+  font-size: var(--font-size-summary);
+}
+
+.widget-dnd switch slider {
+  background: rgb(100, 100, 100); /* Цвет ползунка переключателя */
+  border: 1px solid rgb(60, 60, 60);
+}
+
+.widget-dnd switch:checked slider {
+  background: rgb(180, 180, 180); /* Цвет ползунка при включении */
+}
