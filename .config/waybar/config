@@ -97,11 +97,11 @@
 	},
 	"events": {
 		"on-discharging-warning": "notify-send -u normal -t 3000 '🔋 Батарея' 'Низкий заряд ⚠️'",
-		"on-discharging-critical": "notify-send -u critical -t 5000 '🔋 Батарея' 'Очень низкий заряд ❗'",
-		"on-charging-100": "notify-send -u normal -t 3000 '🔋 Батарея' 'Полностью заряжено ✅'"
+		"on-discharging-critical": "notify-send -u critical -t 5000 '🔋 Батарея' 'Очень низкий заряд ❗'"
 	},
 	"format-icons": ["", "", "", "", ""],
-	"max-length": 25
+	"max-length": 25,
+  "tooltip-format": "{capacity}%"
 }
 
 }
