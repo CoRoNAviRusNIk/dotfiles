@@ -54,9 +54,19 @@
     "inhibitors",
     "title",
     "dnd",
+    "mpris",
+    "buttons-grid",
+    "volume",
+    "backlight",
     "notifications"
   ],
   "widget-config": {
+    "volume": {
+      "label": "📢"
+    },
+    "backlight": {
+      "label": "☀️"
+    },
     "notifications": {
       "vexpand": true
     },
@@ -84,14 +94,29 @@
       "loop-carousel": false
     },
     "buttons-grid": {
-      "buttons-per-row": 7,
+      "buttons-per-row": 4,
       "actions": [
         {
-          "label": "直",
+          "label": "ScreenShot",
+          "command": "grim -g \"$(slurp)\" - | wl-copy",
+          "type": "button"
+        },
+        {
+          "label": "WI-FI",
           "type": "toggle",
           "active": true,
           "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
           "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
+        },
+        {
+          "label": "Reboot",
+          "command": "systemctl reboot",
+          "type": "button"
+        },
+        {
+          "label": "PowerOFF",
+          "command": "systemctl poweroff",
+          "type": "button"
         }
       ]
     }

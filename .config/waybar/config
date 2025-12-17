@@ -4,7 +4,7 @@
   "height": 32,
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "custom/text", "hyprland/language", "wireplumber", "battery", "network", "custom/text", "custom/power"],
+  "modules-right": ["tray", "custom/text", "hyprland/language", "wireplumber", "battery", "network", "power-profiles-daemon", "custom/text", "custom/power"],
 
   
   "hyprland/workspaces": {
@@ -102,6 +102,18 @@
 	"format-icons": ["", "", "", "", ""],
 	"max-length": 25,
   "tooltip-format": "{capacity}%"
+},
+
+"power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
+  }
 }
 
 }

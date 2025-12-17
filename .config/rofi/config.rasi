@@ -2,9 +2,9 @@ configuration {
     display-drun: "Apps:";
     display-window: "Win:";
     drun-display-format: "{name}";
-    font: "JetBrainsMono Nerd Font 10";
+    font: "Cascadia Mono Medium 10";
     modi: "window,run,drun";
-    show-icons: false;
+    show-icons: true;
 }
 
 @theme "current.rasi"
