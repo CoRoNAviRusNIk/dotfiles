@@ -4,7 +4,7 @@
   "height": 32,
   "modules-left": ["hyprland/workspaces", "mpris"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "custom/text", "hyprland/language", "wireplumber", "battery", "network", "custom/notification", "custom/text", "power-profiles-daemon"],
+  "modules-right": ["tray", "custom/text", "hyprland/language", "wireplumber", "battery", "network", "custom/notification", "custom/cleaner", "custom/text", "power-profiles-daemon"],
 
   
   "hyprland/workspaces": {
@@ -126,6 +126,13 @@
 		"paused": "⏸"
 	},
   "max-length": 30
+},
+
+"custom/cleaner": {
+    "format": "󰃢",
+    "on-click": "sh -c 'fc-cache -fv && rm -f ~/.config/gtk-4.0/gtk.css'",
+    "tooltip-format": "Очистить кэш шрифтов и удалить gtk.css",
+    "interval": "once"
 }
 
 }
