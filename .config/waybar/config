@@ -2,9 +2,9 @@
   "layer": "top",
   "position": "top",
   "height": 32,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "mpris"],
   "modules-center": ["clock"],
-  "modules-right": ["tray", "custom/text", "hyprland/language", "wireplumber", "battery", "network", "power-profiles-daemon", "custom/text", "custom/power"],
+  "modules-right": ["tray", "custom/text", "hyprland/language", "wireplumber", "battery", "network", "custom/notification", "custom/text", "power-profiles-daemon"],
 
   
   "hyprland/workspaces": {
@@ -43,7 +43,7 @@
   "clock": {
     "format": "{:%A %H:%M}",
     "tooltip-format": "{calendar}",
-    "on-click": "swaync-client -t",
+    "on-click": "gnome-clocks",
     "calendar": {
             "mode"          : "month",
             "mode-mon-col"  : 3,
@@ -56,18 +56,12 @@
 
 
   "network": {
-    "format-wifi": "󰖩 ",
+    "format-wifi": "󰖩",
     "format-ethernet": "",
     "format-disconnected": "",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "{ifname}",
     "tooltip-format-disconnected": "Disconnected"
-  },
-
-
-  "custom/power": {
-    "format": "",
-    "on-click": "wlogout"
   },
 
 
@@ -114,6 +108,24 @@
     "balanced": "",
     "power-saver": ""
   }
+},
+
+"custom/notification": {
+  "format": "󰂚",
+  "on-click": "swaync-client -t"
+},
+
+"mpris": {
+	"format": "{player_icon} {title}",
+	"format-paused": "{status_icon} <i>{title}</i>",
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+  "max-length": 30
 }
 
 }

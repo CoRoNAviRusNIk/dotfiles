@@ -62,10 +62,10 @@
   ],
   "widget-config": {
     "volume": {
-      "label": "📢"
+      "label": "󰕾"
     },
     "backlight": {
-      "label": "☀️"
+      "label": "󰃟"
     },
     "notifications": {
       "vexpand": true
@@ -97,24 +97,24 @@
       "buttons-per-row": 4,
       "actions": [
         {
-          "label": "ScreenShot",
+          "label": "󰹑",
           "command": "grim -g \"$(slurp)\" - | wl-copy",
           "type": "button"
         },
         {
-          "label": "WI-FI",
+          "label": "󰖩",
           "type": "toggle",
           "active": true,
           "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
           "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
         },
         {
-          "label": "Reboot",
+          "label": "󰑓",
           "command": "systemctl reboot",
           "type": "button"
         },
         {
-          "label": "PowerOFF",
+          "label": "󰐥",
           "command": "systemctl poweroff",
           "type": "button"
         }

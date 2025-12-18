@@ -8,7 +8,7 @@
 }
 
 #waybar {
-    background: @surface;
+    background: @background;
     color: @on_surface;
 
 }
@@ -98,12 +98,17 @@
     padding-right: 0.85em;
 }
 
+#custom-notification {
+    padding-right: 0.85em;
+}
+
 #custom-text {
     padding-right: 0.85em;
     color: #8a8a8a;
 }
 
 
-
-
-
+#mpris {
+    padding-left: 2em;
+    padding-right: 0.85em;
+}
