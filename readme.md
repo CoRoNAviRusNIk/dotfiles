@@ -42,6 +42,6 @@
 - `rofi-tabs.sh` — Меню важных категорий
 - `themes_menu.sh` — Меню выбора тем
 - `trigger_menu.sh` — Меню триггеров
-- `wallpaper_menu.sh` — Меню выбора обоями
+- `wallpaper_menu.sh` — Меню выбора обоев
 
 ---

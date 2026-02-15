@@ -2,15 +2,19 @@
 
 DOTSYNC_PATH="$HOME/.local/bin/sync.sh"
 DOTPUSH_PATH="$HOME/.local/bin/dotfiles_push.sh"
+MENU_PATH="$HOME/.local/bin/rofi-tabs.sh"
 
-CHOICE=$(printf "1. 💾 Синхронизировать Dotfiles (dotsync)\n2. 🚀 Push Dotfiles в Git" | rofi -dmenu -p "Выбор триггера")
+CHOICE=$(printf "🌳 Sync Dotfiles\n🍄 Push Dotfiles\n◀ Выход" | rofi -dmenu -p "Выбор триггера")
 
 case "$CHOICE" in
-    "1. 💾 Синхронизировать Dotfiles (dotsync)")
+    "🌳 Sync Dotfiles")
         "$DOTSYNC_PATH"
         ;;
-    "2. 🚀 Push Dotfiles в Git")
+    "🍄 Push Dotfiles")
         "$DOTPUSH_PATH"
+        ;;
+    "◀ Выход")
+        "$MENU_PATH"
         ;;
     *)
         ;;
