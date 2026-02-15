@@ -1,0 +1,64 @@
+/*
+* GTK Colors
+* Manually adjusted to Dune
+*/
+
+* {
+font-weight: 500;
+}
+
+@define-color accent_color #E86A3F;
+@define-color accent_fg_color #1A1410;
+@define-color accent_bg_color #E86A3F;
+@define-color window_bg_color #1A1410;
+@define-color window_fg_color #D4AE7E;
+@define-color headerbar_bg_color #1A1410;
+@define-color headerbar_fg_color #D4AE7E;
+@define-color popover_bg_color #1A1410;
+@define-color popover_fg_color #D4AE7E;
+@define-color view_bg_color #1A1410;
+@define-color view_fg_color #D4AE7E;
+@define-color card_bg_color #1A1410;
+@define-color card_fg_color #D4AE7E;
+@define-color sidebar_bg_color @window_bg_color;
+@define-color sidebar_fg_color @window_fg_color;
+@define-color sidebar_border_color @window_bg_color;
+@define-color sidebar_backdrop_color @window_bg_color;
+
+.navigation-sidebar {
+background-color: @sidebar_bg_color;
+color: @window_fg_color;
+}
+
+headerbar.default-decoration {
+margin-bottom: 50px;
+margin-top: -100px;
+}
+
+/* rm -rf window shadows */
+window.csd,
+window.csd decoration {
+box-shadow: none;
+}
+
+/* Для Thunar */
+.thunar,
+.thunar window,
+treeview.view {
+font-family: "Terminus (TTF)"
+}
+
+/* Для GNOME Clocks (обычно используется такой класс) */
+.clocks-view,
+#clocks-pannel {
+font-family: "Terminus (TTF)"
+}
+
+/* Для Nautilus */
+.nautilus-window,
+nautilus-window,
+.nautilus-list-view,
+.nautilus-grid-view,
+window#nautilus-window {
+font-family: "Terminus (TTF)";
+}

@@ -1,0 +1,69 @@
+/*
+* GTK Colors
+* Updated to Catppuccin Mocha with High Contrast
+*/
+
+* {
+    font-weight: 500; 
+}
+
+/* Акценты - используем Mauve для максимальной видимости */
+@define-color accent_color #cba6f7;      /* Mauve */
+@define-color accent_fg_color #11111b;   /* Crust - максимальный контраст на Mauve */
+@define-color accent_bg_color #cba6f7;   /* Mauve */
+
+/* Основные окна */
+@define-color window_bg_color #1e1e2e;   /* Base */
+@define-color window_fg_color #cdd6f4;   /* Text */
+
+/* Заголовки (Headerbar) - чуть темнее для глубины */
+@define-color headerbar_bg_color #181825; /* Mantle */
+@define-color headerbar_fg_color #cdd6f4; /* Text */
+
+/* Всплывающие элементы */
+@define-color popover_bg_color #313244;  /* Surface 0 */
+@define-color popover_fg_color #cdd6f4;  /* Text */
+
+/* Рабочие области (View) */
+@define-color view_bg_color #1e1e2e;     /* Base */
+@define-color view_fg_color #cdd6f4;     /* Text */
+
+/* Карточки и списки */
+@define-color card_bg_color #313244;     /* Surface 0 */
+@define-color card_fg_color #cdd6f4;     /* Text */
+
+/* Сайдбар - отделяем визуально через Mantle */
+@define-color sidebar_bg_color #181825;  /* Mantle */
+@define-color sidebar_fg_color #cdd6f4;  /* Text */
+@define-color sidebar_border_color #313244; /* Surface 0 - чёткая граница */
+@define-color sidebar_backdrop_color #181825;
+
+.navigation-sidebar {
+    background-color: @sidebar_bg_color;
+    color: @sidebar_fg_color;
+}
+
+headerbar.default-decoration {
+    margin-bottom: 50px;
+    margin-top: -100px;
+}
+
+/* Убираем тени для чистого вида */
+window.csd,
+window.csd decoration {
+    box-shadow: none;
+}
+
+/* Шрифты для системных приложений */
+.thunar, 
+.thunar window,
+treeview.view,
+.clocks-view,
+#clocks-pannel,
+.nautilus-window,
+nautilus-window,
+.nautilus-list-view,
+.nautilus-grid-view,
+window#nautilus-window {
+    font-family: "Terminus (TTF)";
+}

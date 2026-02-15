@@ -1,9 +1,9 @@
 @import "colors.rasi"
 
 * {
-    dark-bg:           @surface-dim;
+    dark-bg:           @on-primary-fixed;
     light-fg:          @on-surface;
-    highlight-color:   @primary;
+    highlight-color:   @on-surface;
     on-highlight:      @on-primary;
     
     text-color:        @light-fg;
@@ -14,11 +14,11 @@ window {
     transparency:      "real";
     background-color:  @dark-bg;
     
-    width:             300px;
+    width:               300px;
     
     border:            2px;
     border-color:      @highlight-color;
-    border-radius:     7px;
+    border-radius:     0px;
     
     location:          center;
     anchor:            center;
@@ -58,7 +58,7 @@ element {
     orientation:       horizontal;
     padding:           8px 10px;
     spacing:           10px;
-    border-radius:     7px;
+    border-radius:     0px;
     background-color:  transparent;
     text-color:        @light-fg;
     cursor:            pointer;

@@ -1,0 +1,23 @@
+# Настройки отображения
+set selection-clipboard clipboard
+set statusbar-h-padding 10
+set statusbar-v-padding 10
+set guioptions none
+
+# Режим перекрашивания (Recolor) — тот самый вайб
+set recolor "true"
+set recolor-keephue "false"
+
+# Цвета в стиле Everforest (Dark)
+set default-bg                  "#1E2326"
+set default-fg                  "#d3c6aa"
+set statusbar-bg                "#343f44"
+set statusbar-fg                "#d3c6aa"
+set inputbar-bg                 "#1E2326"
+set inputbar-fg                 "#a7c080"
+set recolor-lightcolor          "#1E2326"
+set recolor-darkcolor           "#d3c6aa"
+
+# Цвет выделения
+set highlight-color             "#475258"
+set highlight-active-color      "#a7c080"

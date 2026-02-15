@@ -1,0 +1,64 @@
+/*
+ * Rofi Color Theme
+ * Style: Catppuccin Mocha (High Contrast Edition)
+ */
+
+* {
+    /* Основной акцент — Mauve */
+    primary:                    #cba6f7;
+    primary-fixed:              #cba6f7;
+    primary-fixed-dim:          #cba6f7;
+    on-primary:                 #11111b; /* Crust для максимальной читаемости на светлом */
+    on-primary-fixed:           #11111b;
+    on-primary-fixed-variant:   #181825; /* Mantle */
+    primary-container:          #cba6f7;
+    on-primary-container:       #11111b;
+
+    /* Вторичный акцент — Lavender */
+    secondary:                  #b4befe;
+    secondary-fixed:            #b4befe;
+    secondary-fixed-dim:        #b4befe;
+    on-secondary:               #11111b;
+    on-secondary-fixed:         #11111b;
+    on-secondary-fixed-variant: #181825;
+    secondary-container:        #b4befe;
+    on-secondary-container:     #11111b;
+
+    /* Третичный акцент — Teal */
+    tertiary:                   #94e2d5;
+    tertiary-fixed:             #94e2d5;
+    tertiary-fixed-dim:         #94e2d5;
+    on-tertiary:                #11111b;
+    on-tertiary-fixed:          #11111b;
+    on-tertiary-fixed-variant:  #181825;
+    tertiary-container:         #94e2d5;
+    on-tertiary-container:      #11111b;
+
+    /* Ошибки — Red */
+    error:                      #f38ba8;
+    on-error:                   #11111b;
+    error-container:            #f38ba8;
+    on-error-container:         #11111b;
+
+    /* Поверхности и фон */
+    surface:                    #1e1e2e; /* Base */
+    on-surface:                 #cdd6f4; /* Text */
+    on-surface-variant:         #bac2de; /* Subtext 1 - чуть ярче для контраста */
+    outline:                    #585b70; /* Surface 2 */
+    outline-variant:            #45475a; /* Surface 1 */
+
+    shadow:                     #000000;
+    scrim:                      #000000;
+    inverse-surface:            #cdd6f4;
+    inverse-on-surface:         #11111b;
+    inverse-primary:            #cba6f7;
+
+    /* Глубина фона */
+    surface-dim:                #11111b; /* Crust */
+    surface-bright:             #313244; /* Surface 0 */
+    surface-container-lowest:   #11111b;
+    surface-container-low:      #181825; /* Mantle */
+    surface-container:          #1e1e2e; /* Base */
+    surface-container-high:     #313244; /* Surface 0 */
+    surface-container-highest:  #45475a; /* Surface 1 */
+}

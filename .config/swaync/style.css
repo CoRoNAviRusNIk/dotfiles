@@ -1,11 +1,11 @@
 :root {
-  --cc-bg: rgba(0, 0, 0, 0.95); /* Почти черный фон для Control Center */
-  --noti-border-color: rgba(20, 20, 20, 0.8); /* Очень темная рамка */
-  --noti-bg: 10, 10, 10; /* Темный, почти черный фон уведомлений */
-  --noti-bg-alpha: 0.9;
-  --text-color: rgb(230, 230, 230); /* Светлый, но не чисто белый текст */
+  --cc-bg: #1E2326; /* Control Center */
+  --noti-border-color: #D2C5A9;
+  --noti-bg: #1E2326;
+  --noti-bg-alpha: 1;
+  --text-color: #D2C5A9; /* Светлый, но не чисто белый текст */
   --text-color-disabled: rgb(80, 80, 80); /* Более тусклый текст для неактивных элементов */
-  --border-radius: 6px; 
+  --border-radius: 0px; 
   --border: 2px solid var(--noti-border-color);
   --font-size-body: 15px;
   --font-size-summary: 16px;
@@ -23,17 +23,19 @@ notificationwindow, blankwindow {
 .notification-row .notification-background .notification .notification-default-action .notification-icon {
   min-width: var(--notification-icon-size); 
   min-height: var(--notification-icon-size);
-  max-width: var(--notification-icon-size); 
-  max-height: var(--notification-icon-size);
   margin-right: 0;
+}
+
+.notification-row .notification-background {
+  background: transparent;
 }
 
 
 .notification-row .notification-background .notification {
-  background: rgba(var(--noti-bg), var(--noti-bg-alpha));
+  background: #1E2326;
   border: var(--border);
   border-radius: var(--border-radius);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Тень для глубины */
+  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); Тень для глубины */
 }
 
 .notification-row .notification-background .notification .notification-default-action {
@@ -51,7 +53,7 @@ notificationwindow, blankwindow {
 .notification-row .notification-background .notification .notification-default-action .notification-content .time {
   color: var(--text-color);
   background: transparent;
-  font-family: "Cascadia Mono Medium", "JetBrainsMono Nerd Font Propo";
+  font-family: "Terminus (TTF)";
 }
 
 .close-button {
@@ -60,7 +62,6 @@ notificationwindow, blankwindow {
   border: none;
   margin: 4px; /* Меньшие отступы для кнопки закрытия */
   padding: 4px;
-  opacity: 0.7; /* Слегка затемненная по умолчанию */
 }
 
 .close-button:hover {
@@ -72,17 +73,17 @@ notificationwindow, blankwindow {
   background: var(--cc-bg);
   color: var(--text-color);
   border-radius: var(--border-radius);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Более выраженная тень для Control Center */
-  border: 1px solid rgba(30, 30, 30, 0.8); /* Тонкая темная рамка */
-}
+  border: 2px solid #D2C5A9;
+  padding: 0;
+  margin: 0;
+} 
 
 .widget {
-  background: rgba(20, 20, 20, 0.7); /* Темный фон для виджетов */
+  /*background: rgba(20, 20, 20, 0.7);  Темный фон для виджетов */
   color: var(--text-color);
-  margin: 6px;
   border-radius: var(--border-radius);
-  border: 1px solid rgba(40, 40, 40, 0.6); /* Темная рамка виджетов */
-  padding: 8px; /* Отступы внутри виджетов */
+  border: 2px solid #847f73; /* Темная рамка виджетов */
+  margin: 8px 8px 8px 8px;
 }
 
 .widget-title > label,
@@ -100,4 +101,9 @@ notificationwindow, blankwindow {
 
 .widget-dnd switch:checked slider {
   background: rgb(180, 180, 180); /* Цвет ползунка при включении */
+}
+
+
+.widget-buttons-grid {
+  display: none;
 }

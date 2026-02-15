@@ -1,118 +1,77 @@
 @import "colors.css";
 
 * {
-    font-family: "Cascadia Mono Medium", "JetBrainsMono Nerd Font Propo";
-    font-size: 15px;
-    padding: 1px;
+    font-family: "Terminus (TTF)", "JetBrainsMono Nerd Font Propo";
+    font-size: 12px;
+    padding: 0;
     margin: 0;
 }
 
-#waybar {
+window#waybar, #waybar {
     background: @background;
     color: @on_surface;
+    border-bottom: 2.5px solid @on_surface;
+    border-radius: 0;
+    margin: 0;
 
+    min-height: 40px; 
 }
 
+.modules-left, .modules-center, .modules-right {
+    padding-bottom: 3px;
+}
 
-/**
- *      _       __ _   
- *     | | ___ / _| |_ 
- *     | |/ _ \ |_| __|
- *     | |  __/  _| |_ 
- *     |_|\___|_|  \__|
- *                     
- */
+.modules-left {
+    margin-left: 10px;
+}
+
+.modules-right {
+    margin-right: 10px;
+}
+
+.modules-left > widget,
+.modules-center > widget,
+.modules-right > widget {
+    margin: 0 5px;
+}
+
 
 
 
 #workspaces button {
-    padding-left: 0.7em;
-    color: #ffffff;
+    color: @on_surface;
+    padding: 0 2px;
+}
+
+#workspaces button.active {
+    color: #ff6699;
 }
 
 #workspaces button.empty {
     color: #8a8a8a;
 }
 
-
-
-
-
-/**
- *                _     _     _ _      
- *      _ __ ___ (_) __| | __| | | ___ 
- *     | '_ ` _ \| |/ _` |/ _` | |/ _ \
- *     | | | | | | | (_| | (_| | |  __/
- *     |_| |_| |_|_|\__,_|\__,_|_|\___|
- *                                     
- */
-
-
-#clock {
-    font-size: 15px;
-    padding-right: 0.85em;
+#power-profiles-daemon,
+#custom-notification,
+#custom-text,
+#clock,
+#network,
+#battery,
+#language,
+#cpu,
+#memory,
+#temperature,
+#pulseaudio,
+#tray {
+    padding: 0 10px;
 }
-
-
-/**
- *           _       _     _   
- *      _ __(_) __ _| |__ | |_ 
- *     | '__| |/ _` | '_ \| __|
- *     | |  | | (_| | | | | |_ 
- *     |_|  |_|\__, |_| |_|\__|
- *             |___/           
- */
-
-
-#wireplumber {
-    font-size: 17px;
-    padding-right: 0.85em;
-}
-
-
-#custom-power {
-    padding-right: 0.85em;
-}
-
-
-#network{
-    padding-right: 0.85em;
-}
-
-
-#battery {
-    padding-right: 0.85em;
-}
-
 
 #language {
-    padding-right: 0.85em;
-}
-
-
-#tray {
-    padding-right: 0.85em;
-}
-
-#power-profiles-daemon {
-    padding-right: 0.85em;
-}
-
-#custom-notification {
-    padding-right: 0.85em;
+    color: #ff6699;
 }
 
 #custom-text {
-    padding-right: 0.85em;
-    color: #8a8a8a;
+    margin: 0;
+    color: #464646;
 }
 
-
-#mpris {
-    padding-left: 2em;
-    padding-right: 0.85em;
-}
-
-#custom-cleaner {
-    padding-right: 0.85em;
-}

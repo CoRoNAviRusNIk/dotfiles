@@ -1,0 +1,84 @@
+/**
+ * @name midnight-everforest
+ * @description A dark, rounded discord theme with Everforest Hard colors.
+ * @author refact0r (modded for Everforest Hard)
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+:root {
+	/* font */
+	--font: 'figtree';
+
+	/* top left corner text */
+	--corner-text: 'Everforest';
+
+	/* color of status indicators and window controls */
+	--online-indicator: #7FBBB3;     /* blue */
+	--dnd-indicator: #E67E80;        /* red */
+	--idle-indicator: #DBBC7F;       /* yellow */
+	--streaming-indicator: #D699B6;  /* purple */
+
+	/* accent colors */
+	--accent-1: #D699B6;            /* purple (links) */
+	--accent-2: #7FBBB3;            /* blue (unread) */
+	--accent-3: #7FBBB3;            /* blue (buttons) */
+	--accent-4: #374145;            /* bg2 (hover buttons) */
+	--accent-5: #7FBBB3;            /* blue (clicked buttons) */
+	--mention:  #384B55;             /* bg_blue (mentions) */
+	--mention-hover: #414B50;       /* bg3 (mentions hover) */
+
+	/* text colors */
+	--text-0: #272E33;               /* bg0 (text on colored elements) */
+	--text-1: #D3C6AA;               /* fg (headings) */
+	--text-2: #D3C6AA;               /* fg (important text) */
+	--text-3: #9DA9A0;               /* grey2 (normal text) */
+	--text-4: #859289;               /* grey1 (icons/channels) */
+	--text-5: #7A8478;               /* grey0 (muted) */
+
+	/* background and dark colors */
+	--bg-1: #7FBBB3;                             /* blue (clicked buttons) */
+	--bg-2: #2E383C;                             /* bg1 (dark buttons) */
+	--bg-3: #272E33;                             /* bg0 (spacing) */
+	--bg-4: #1E2326;                             /* bg_dim (main background) */
+	--hover: #2E383C;                            /* bg1 (hover) */
+	--active: #374145;                           /* bg2 (active) */
+	--message-hover: #272E33;                    /* bg0 (message hover) */
+
+	/* amount of spacing and padding */
+	--spacing: 12px;
+
+	/* animations */
+	--list-item-transition: 0.2s ease;
+	--unread-bar-transition: 0.2s ease;
+	--moon-spin-transition: 0.4s ease;
+	--icon-spin-transition: 1s ease;
+
+	/* corner roundness */
+	--roundness-xl: 22px;
+	--roundness-l: 20px;
+	--roundness-m: 16px;
+	--roundness-s: 12px;
+	--roundness-xs: 10px;
+	--roundness-xxs: 8px;
+
+	--discord-icon: none;
+	--moon-icon: block;
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+	--moon-icon-size: auto;
+
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4);
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
+}
+
+.selected_f5eb4b,
+.selected_f6f816 .link_d8bfb3 {
+  color: var(--text-0) !important;
+  background: var(--accent-3) !important;
+}
+
+.selected_f6f816 .link_d8bfb3 * {
+  color: var(--text-0) !important;
+  fill: var(--text-0) !important;
+}

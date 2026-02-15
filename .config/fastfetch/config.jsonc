@@ -4,47 +4,36 @@
     "type": "file",
     "source": "~/.config/fastfetch/cat.txt",
     "padding": {
-      "top": 4,
-      "left": 7
+      "top": 2,
+      "left": 2
     }
   },
   "modules": [
     "break",
+    {
+      "type": "title"
+    },
     "break",
     {
-      "type": "os",
-      "key": " "
+      "type": "wm",
+      "key": "wm "
     },
     {
       "type": "kernel",
-      "key": " "
-    },
-    {
-      "type": "packages",
-      "key": " "
-    },
-    {
-      "type": "shell",
-      "key": " "
-    },
-    {
-      "type": "terminal",
-      "key": " "
-    },
-    {
-      "type": "wm",
-      "key": " "
-      
+      "key": "kr "
     },
     {
       "type": "uptime",
-      "key": " "
+      "key": "up "
     },
     {
-      "type": "media",
-      "key": "󰝚 "
+      "type": "shell",
+      "key": "sh "
     },
     "break",
-    "break"
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
   ]
 }

@@ -1,0 +1,72 @@
+# Catppuccin Mocha theme for btop
+# High Contrast Edition for Кот
+
+# Основной фон (пусто для прозрачности терминала)
+theme[main_bg]=""
+
+# Основной текст (Text)
+theme[main_fg]="#cdd6f4"
+
+# Заголовки разделов (Mauve)
+theme[title]="#cba6f7"
+
+# Подсветка горячих клавиш (Peach)
+theme[hi_fg]="#fab387"
+
+# Выделенный процесс в списке (Surface 2 + Rosewater для контраста)
+theme[selected_bg]="#585b70"
+theme[selected_fg]="#f5e0dc"
+
+# Неактивный текст (Overlay 0)
+theme[inactive_fg]="#6c7086"
+
+# Разное в процессах (Rosewater)
+theme[proc_misc]="#f5e0dc"
+
+# Границы боксов (Surface 2 — для чёткого разделения зон)
+theme[cpu_box]="#585b70"
+theme[mem_box]="#585b70"
+theme[net_box]="#585b70"
+theme[proc_box]="#585b70"
+
+# Разделительные линии (Surface 0)
+theme[div_line]="#313244"
+
+# График температуры (Green -> Yellow -> Red)
+theme[temp_start]="#a6e3a1"
+theme[temp_mid]="#f9e2af"
+theme[temp_end]="#f38ba8"
+
+# График CPU (Teal -> Sky -> Red)
+theme[cpu_start]="#94e2d5"
+theme[cpu_mid]="#89dceb"
+theme[cpu_end]="#f38ba8"
+
+# Свободная память (Green)
+theme[free_start]="#a6e3a1"
+theme[free_mid]=""
+theme[free_end]="#a6e3a1"
+
+# Кэшированная память (Sapphire)
+theme[cached_start]="#74c7ec"
+theme[cached_mid]=""
+theme[cached_end]="#74c7ec"
+
+# Доступная память (Blue)
+theme[available_start]="#89b4fa"
+theme[available_mid]=""
+theme[available_end]="#89b4fa"
+
+# Использованная память (Peach -> Red)
+theme[used_start]="#fab387"
+theme[used_mid]=""
+theme[used_end]="#f38ba8"
+
+# Графики сети (Teal -> Blue -> Mauve)
+theme[download_start]="#94e2d5"
+theme[download_mid]="#89b4fa"
+theme[download_end]="#cba6f7"
+
+theme[upload_start]="#94e2d5"
+theme[upload_mid]="#89b4fa"
+theme[upload_end]="#cba6f7"

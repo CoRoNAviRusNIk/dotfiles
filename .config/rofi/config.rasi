@@ -2,7 +2,7 @@ configuration {
     display-drun: "Apps:";
     display-window: "Win:";
     drun-display-format: "{name}";
-    font: "Cascadia Mono Medium 10";
+    font: "Terminus (TTF) 12";
     modi: "window,run,drun";
     show-icons: true;
 }

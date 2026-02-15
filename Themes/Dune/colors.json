@@ -1,0 +1,22 @@
+{
+  "wallpaper": "{{image}}",
+  "alpha": "100",
+  "colors": {
+    "color0": "#0F0C0A",
+    "color1": "#BF6830",
+    "color2": "#A67C52",
+    "color3": "#D4AE7E",
+    "color4": "#6B5540",
+    "color5": "#E86A3F",
+    "color6": "#F0A860",
+    "color7": "#4A3F35",
+    "color8": "#2D2520",
+    "color9": "#E86A3F",
+    "color10": "#A67C52",
+    "color11": "#F0A860",
+    "color12": "#D4AE7E",
+    "color13": "#BF6830",
+    "color14": "#E8D4B0",
+    "color15": "#D4AE7E"
+  }
+}

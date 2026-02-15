@@ -1,0 +1,84 @@
+/**
+ * @name midnight-gruvbox
+ * @description A dark, rounded discord theme with Gruvbox colors.
+ * @author refact0r (modded for Gruvbox)
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+:root {
+	/* font */
+	--font: 'figtree';
+
+	/* top left corner text */
+	--corner-text: 'Gruvbox';
+
+	/* color of status indicators and window controls */
+    --online-indicator: #458588;     /* blue */
+	--dnd-indicator: #fb4934;        /* bright_red */
+	--idle-indicator: #fabd2f;       /* bright_yellow */
+	--streaming-indicator: #b16286;  /* purple */
+
+	/* accent colors */
+    --accent-1: #d3869b;            /* bright_purple (links) */
+	--accent-2: #83a598;            /* bright_blue (unread) */
+	--accent-3: #83a598;            /* bright_blue (buttons) */
+	--accent-4: #3c3836;            /* bg1 (hover buttons) */
+	--accent-5: #458588;            /* blue (clicked buttons) */
+	--mention:  #32302f;             /* bg0_soft (mentions) */
+	--mention-hover: #3c3836;       /* bg1 (mentions hover) */
+
+	/* text colors */
+	--text-0: #1d2021;               /* bg0_hard (text on colored elements) */
+	--text-1: #ebdbb2;               /* fg1 (headings) */
+	--text-2: #ebdbb2;               /* fg1 (important text) */
+	--text-3: #d5c4a1;               /* fg2 (normal text) */
+	--text-4: #a89984;               /* fg4 (icons/channels) */
+	--text-5: #928374;               /* gray (muted) */
+
+	/* background and dark colors */
+    --bg-1: #83a598;                             /* bright_blue (clicked buttons) */
+	--bg-2: #3c3836;                             /* bg1 (dark buttons) */
+	--bg-3: #282828;                             /* bg0 (spacing) */
+	--bg-4: #1d2021;                             /* bg0_hard (main background) */
+	--hover: #32302f;                            /* bg0_soft (hover) */
+	--active: #3c3836;                           /* bg1 (active) */
+	--message-hover: #282828;                    /* bg0 (message hover) */
+
+	/* amount of spacing and padding */
+	--spacing: 12px;
+
+	/* animations */
+	--list-item-transition: 0.2s ease;
+	--unread-bar-transition: 0.2s ease;
+	--moon-spin-transition: 0.4s ease;
+	--icon-spin-transition: 1s ease;
+
+	/* corner roundness */
+	--roundness-xl: 22px;
+	--roundness-l: 20px;
+	--roundness-m: 16px;
+	--roundness-s: 12px;
+	--roundness-xs: 10px;
+	--roundness-xxs: 8px;
+
+	--discord-icon: none;
+	--moon-icon: block;
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+	--moon-icon-size: auto;
+
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4);
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
+}
+
+.selected_f5eb4b,
+.selected_f6f816 .link_d8bfb3 {
+  color: var(--text-0) !important;
+  background: var(--accent-3) !important;
+}
+
+.selected_f6f816 .link_d8bfb3 * {
+  color: var(--text-0) !important;
+  fill: var(--text-0) !important;
+}

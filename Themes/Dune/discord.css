@@ -1,0 +1,84 @@
+/**
+ * @name midnight-dune
+ * @description A dark, rounded discord theme with Dune colors.
+ * @author refact0r (modded for Dune)
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+:root {
+	/* font */
+	--font: 'figtree';
+
+	/* top left corner text */
+	--corner-text: 'Dune';
+
+	/* color of status indicators and window controls */
+	--online-indicator: #E86A3F;     /* Orange */
+	--dnd-indicator: #BF6830;        /* Dark Orange */
+	--idle-indicator: #D4AE7E;       /* Sand */
+	--streaming-indicator: #F0A860;  /* Bright Orange */
+
+	/* accent colors */
+	--accent-1: #E86A3F;            /* Orange (links) */
+	--accent-2: #F0A860;            /* Bright Orange (unread) */
+	--accent-3: #E86A3F;            /* Orange (buttons) */
+	--accent-4: #4A3F35;            /* Light Gray (hover buttons) */
+	--accent-5: #BF6830;            /* Dark Orange (clicked buttons) */
+	--mention:  #2D2520;             /* Gray (mentions) */
+	--mention-hover: #4A3F35;       /* Light Gray (mentions hover) */
+
+	/* text colors */
+	--text-0: #1A1410;               /* Dark Gray (text on colored elements) */
+	--text-1: #E8D4B0;               /* Light Sand (headings) */
+	--text-2: #D4AE7E;               /* Sand (important text) */
+	--text-3: #A67C52;               /* Light Tan (normal text) */
+	--text-4: #6B5540;               /* Tan (icons/channels) */
+	--text-5: #4A3F35;               /* Light Gray (muted) */
+
+	/* background and dark colors */
+	--bg-1: #E86A3F;                             /* Orange (clicked buttons) */
+	--bg-2: #2D2520;                             /* Gray (dark buttons) */
+	--bg-3: #1A1410;                             /* Dark Gray (spacing) */
+	--bg-4: #0F0C0A;                             /* Black (main background) */
+	--hover: #2D2520;                            /* Gray (hover) */
+	--active: #4A3F35;                           /* Light Gray (active) */
+	--message-hover: #1A1410;                    /* Dark Gray (message hover) */
+
+	/* amount of spacing and padding */
+	--spacing: 12px;
+
+	/* animations */
+	--list-item-transition: 0.2s ease;
+	--unread-bar-transition: 0.2s ease;
+	--moon-spin-transition: 0.4s ease;
+	--icon-spin-transition: 1s ease;
+
+	/* corner roundness */
+	--roundness-xl: 22px;
+	--roundness-l: 20px;
+	--roundness-m: 16px;
+	--roundness-s: 12px;
+	--roundness-xs: 10px;
+	--roundness-xxs: 8px;
+
+	--discord-icon: none;
+	--moon-icon: block;
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+	--moon-icon-size: auto;
+
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4);
+	--green-to-accent-3-filter: hue-rotate(56deg) saturate(1.43);
+	--blurple-to-accent-3-filter: hue-rotate(304deg) saturate(0.84) brightness(1.2);
+}
+
+.selected_f5eb4b,
+.selected_f6f816 .link_d8bfb3 {
+  color: var(--text-0) !important;
+  background: var(--accent-3) !important;
+}
+
+.selected_f6f816 .link_d8bfb3 * {
+  color: var(--text-0) !important;
+  fill: var(--text-0) !important;
+}

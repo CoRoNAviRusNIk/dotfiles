@@ -1,0 +1,84 @@
+/**
+ * @name midnight-catppuccin-mocha
+ * @description A dark, rounded discord theme with Catppuccin Mocha colors.
+ * @author refact0r (modded for Catppuccin Mocha by Gemini)
+*/
+
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
+
+:root {
+	/* font */
+	--font: 'figtree';
+
+	/* top left corner text */
+	--corner-text: 'Catppuccin Mocha';
+
+	/* color of status indicators and window controls */
+	--online-indicator: #a6e3a1;     /* Green */
+	--dnd-indicator: #f38ba8;        /* Red */
+	--idle-indicator: #f9e2af;       /* Yellow */
+	--streaming-indicator: #cba6f7;  /* Mauve */
+
+	/* accent colors */
+	--accent-1: #cba6f7;            /* Mauve (links) - любимый фиолетовый */
+	--accent-2: #b4befe;            /* Lavender (unread) */
+	--accent-3: #89b4fa;            /* Blue (buttons) */
+	--accent-4: #585b70;            /* Surface 2 (hover buttons) */
+	--accent-5: #89b4fa;            /* Blue (clicked buttons) */
+	--mention:  #45475a;            /* Surface 1 (mentions) */
+	--mention-hover: #585b70;       /* Surface 2 (mentions hover) */
+
+	/* text colors */
+	--text-0: #11111b;               /* Crust (текст на цветных кнопках - макс. контраст) */
+	--text-1: #cdd6f4;               /* Text (headings) - чистый белый/светлый */
+	--text-2: #bac2de;               /* Subtext 1 (important text) */
+	--text-3: #a6adc8;               /* Subtext 0 (normal text) */
+	--text-4: #9399b2;               /* Overlay 2 (icons/channels) */
+	--text-5: #6c7086;               /* Overlay 0 (muted) */
+
+	/* background and dark colors */
+	--bg-1: #cba6f7;                 /* Mauve (accent background) */
+	--bg-2: #45475a;                 /* Surface 1 (dark buttons) */
+	--bg-3: #181825;                 /* Mantle (spacing) */
+	--bg-4: #11111b;                 /* Crust (main background) - глубокий черный */
+	--hover: #313244;                /* Surface 0 (hover) */
+	--active: #45475a;               /* Surface 1 (active) */
+	--message-hover: #1e1e2e;        /* Base (message hover) */
+
+	/* amount of spacing and padding */
+	--spacing: 12px;
+
+	/* animations */
+	--list-item-transition: 0.2s ease;
+	--unread-bar-transition: 0.2s ease;
+	--moon-spin-transition: 0.4s ease;
+	--icon-spin-transition: 1s ease;
+
+	/* corner roundness */
+	--roundness-xl: 22px;
+	--roundness-l: 20px;
+	--roundness-m: 16px;
+	--roundness-s: 12px;
+	--roundness-xs: 10px;
+	--roundness-xxs: 8px;
+
+	--discord-icon: none;
+	--moon-icon: block;
+	--moon-icon-url: url('https://upload.wikimedia.org/wikipedia/commons/c/c4/Font_Awesome_5_solid_moon.svg');
+	--moon-icon-size: auto;
+
+	--login-bg-filter: saturate(0.3) hue-rotate(-15deg) brightness(0.4);
+	--green-to-accent-3-filter: hue-rotate(180deg) saturate(1.2); 
+	--blurple-to-accent-3-filter: hue-rotate(220deg) saturate(0.8) brightness(1.1);
+}
+
+.selected_f5eb4b,
+.selected_f6f816 .link_d8bfb3 {
+  color: var(--text-0) !important;
+  background: var(--accent-1) !important; /* Используем Mauve для активных каналов */
+}
+
+.selected_f6f816 .link_d8bfb3 * {
+  color: var(--text-0) !important;
+  fill: var(--text-0) !important;
+}
