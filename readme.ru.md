@@ -1,7 +1,7 @@
 
 ---
 
-![Rice Screenshot](Pictures/1.png)
+![](Pictures/1.png) ![](Pictures/2.png)
 
 ---
 
