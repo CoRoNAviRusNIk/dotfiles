@@ -9,7 +9,7 @@
   --border: 2px solid var(--noti-border-color);
   --font-size-body: 15px;
   --font-size-summary: 16px;
-  --notification-icon-size: 50px;
+  --notification-icon-size: 64px;
 }
 
 notificationwindow, blankwindow {
@@ -35,13 +35,13 @@ notificationwindow, blankwindow {
   background: #1E2326;
   border: var(--border);
   border-radius: var(--border-radius);
-  /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); Тень для глубины */
+  min-width: 400px;
 }
 
 .notification-row .notification-background .notification .notification-default-action {
   color: var(--text-color);
   background: transparent;
-  padding: 8px 12px 8px 16px;
+  padding: 14px 18px 14px 20px;
 }
 
 .notification-row .notification-background .notification .notification-default-action:hover {
