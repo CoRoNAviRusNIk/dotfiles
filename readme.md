@@ -4,7 +4,7 @@
 
 ---
 
-> 🌐 **Language / Язык:** [English](README.md) | [Русский](README.ru.md)
+> 🌐 **Language / Язык:** [English](readme.md) | [Русский](readme.ru.md)
 
 ---
 
