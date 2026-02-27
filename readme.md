@@ -1,4 +1,3 @@
-
 ---
 
 ![Rice Screenshot](Pictures/1.png)
@@ -9,43 +8,43 @@
 
 ---
 
-## Описание
+## Description
 
-Конфигурации для Wayland окружения на базе Hyprland с акцентом на минимализм и кастомные темы оформления.
+Wayland environment configurations based on Hyprland with a focus on minimalism and custom themes.
 
 ---
 
-## Компоненты
+## Components
 
-### Оконный менеджер
+### Window Manager
 
-- **Hyprland** - Wayland композитор
+- **Hyprland** - Wayland compositor
 
-### Интерфейс
+### Interface
 
-- **Waybar** - Панель задач
-- **Rofi** - Лаунчер приложений
-- **SwayNC** - Центр уведомлений
+- **Waybar** - Taskbar
+- **Rofi** - Application launcher
+- **SwayNC** - Notification center
 
-### Терминал
+### Terminal
 
-- **Kitty** - Терминал
+- **Kitty** - Terminal
 
-### Утилиты
+### Utilities
 
-- **Fastfetch** - Системная информация
-- **Matugen** - Генератор цветовых схем
-- **Zathura** - PDF-ридер
+- **Fastfetch** - System information
+- **Matugen** - Color scheme generator
+- **Zathura** - PDF reader
 
-### Темы
+### Themes
 
-- **Кастомные темы** - Собственные цветовые схемы и темы оформления в директории `Themes/`
+- **Custom themes** - Own color schemes and themes located in the `Themes/` directory
 
-### Скрипты
+### Scripts
 
-- `rofi-tabs.sh` — Меню важных категорий
-- `themes_menu.sh` — Меню выбора тем
-- `trigger_menu.sh` — Меню триггеров
-- `wallpaper_menu.sh` — Меню выбора обоев
+- `rofi-tabs.sh` — Important categories menu
+- `themes_menu.sh` — Theme selection menu
+- `trigger_menu.sh` — Triggers menu
+- `wallpaper_menu.sh` — Wallpaper selection menu
 
 ---
