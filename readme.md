@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Hyprland Config Description</title>
 </head>
 <body>
 
