@@ -53,7 +53,7 @@
 
 <h3>Themes</h3>
 <ul>
-    <li><strong>Custom themes</strong> — Own color schemes and themes located in the <code>Themes/</code> directory</li>
+    <li><strong>Custom themes</strong> — Own color schemes and themes located in the <code>Themes/</code> directory (in the process of perfection...)</li>
 </ul>
 
 <h3>Scripts</h3>
