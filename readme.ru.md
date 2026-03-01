@@ -33,6 +33,8 @@
 - `trigger_menu.sh` — Меню триггеров
 - `wallpaper_menu.sh` — Меню выбора обоев (matugen)
 - `rofi-read.sh` — Меню чтения PDF книг (открывает выбранную книгу из ~/Books через zathura)
+- `sync.sh` — Скрипт синхронизации dotfiles (rsync + логирование + git интеграция)
+- `dotfiles_push.sh` — Git коммит и пуш через rofi
 
 
 ## Горячие клавиши

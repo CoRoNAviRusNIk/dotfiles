@@ -33,6 +33,8 @@ Own color schemes and themes located in the `Themes/` directory (in the process 
 - `trigger_menu.sh` — Triggers menu
 - `wallpaper_menu.sh` — Wallpaper selection menu (matugen)
 - `rofi-read.sh` — PDF book reader menu (opens selected book from ~/Books with zathura)
+- `sync.sh` — Dotfiles synchronization script (rsync + logging + git integration)
+- `dotfiles_push.sh` — Git commit & push via rofi prompt
 
 
 ## Keybindings
