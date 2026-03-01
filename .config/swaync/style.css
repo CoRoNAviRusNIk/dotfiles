@@ -1,15 +1,15 @@
 :root {
-  --cc-bg: #1E2326; /* Control Center */
+  --cc-bg: #1E2326;
   --noti-border-color: #D2C5A9;
   --noti-bg: #1E2326;
   --noti-bg-alpha: 1;
-  --text-color: #D2C5A9; /* Светлый, но не чисто белый текст */
-  --text-color-disabled: rgb(80, 80, 80); /* Более тусклый текст для неактивных элементов */
+  --text-color: #D2C5A9; 
+  --text-color-disabled: rgb(80, 80, 80); 
   --border-radius: 0px; 
   --border: 2px solid var(--noti-border-color);
   --font-size-body: 15px;
   --font-size-summary: 16px;
-  --notification-icon-size: 64px;
+  --notification-icon-size: 48px;
 }
 
 notificationwindow, blankwindow {
@@ -17,13 +17,13 @@ notificationwindow, blankwindow {
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content {
-  margin-left: 2px;
+  margin-left: 16px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-icon {
   min-width: var(--notification-icon-size); 
   min-height: var(--notification-icon-size);
-  margin-right: 0;
+  margin-right: 10px;
 }
 
 .notification-row .notification-background {
@@ -41,11 +41,11 @@ notificationwindow, blankwindow {
 .notification-row .notification-background .notification .notification-default-action {
   color: var(--text-color);
   background: transparent;
-  padding: 14px 18px 14px 20px;
+  padding: 14px 18px 14px 6px;
 }
 
 .notification-row .notification-background .notification .notification-default-action:hover {
-  background: rgba(40, 40, 40, 0.4); /* Темнее при наведении */
+  background: rgba(40, 40, 40, 0.4);
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .summary,
@@ -60,13 +60,13 @@ notificationwindow, blankwindow {
   background: transparent;
   color: var(--text-color);
   border: none;
-  margin: 4px; /* Меньшие отступы для кнопки закрытия */
+  margin: 4px;
   padding: 4px;
 }
 
 .close-button:hover {
-  background: rgba(60, 60, 60, 0.6); /* Темнее при наведении */
-  opacity: 1; /* Полная видимость при наведении */
+  background: rgba(60, 60, 60, 0.6);
+  opacity: 1;
 }
 
 .control-center {
@@ -79,10 +79,9 @@ notificationwindow, blankwindow {
 } 
 
 .widget {
-  /*background: rgba(20, 20, 20, 0.7);  Темный фон для виджетов */
   color: var(--text-color);
   border-radius: var(--border-radius);
-  border: 2px solid #847f73; /* Темная рамка виджетов */
+  border: 2px solid #847f73;
   margin: 8px 8px 8px 8px;
 }
 
@@ -90,20 +89,27 @@ notificationwindow, blankwindow {
 .widget-dnd label,
 .widget-inhibitors > label {
   color: var(--text-color);
-  font-weight: bold; /* Жирный текст для заголовков */
+  font-weight: bold;
   font-size: var(--font-size-summary);
 }
 
 .widget-dnd switch slider {
-  background: rgb(100, 100, 100); /* Цвет ползунка переключателя */
+  background: rgb(100, 100, 100);
   border: 1px solid rgb(60, 60, 60);
 }
 
 .widget-dnd switch:checked slider {
-  background: rgb(180, 180, 180); /* Цвет ползунка при включении */
+  background: rgb(180, 180, 180);
 }
 
 
 .widget-buttons-grid {
   display: none;
+}
+
+.notification-row,
+.notification-background {
+  border: none;
+  background: transparent;
+  box-shadow: none;
 }
