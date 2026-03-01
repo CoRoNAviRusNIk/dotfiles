@@ -31,7 +31,8 @@ Own color schemes and themes located in the `Themes/` directory (in the process 
 - `rofi-tabs.sh` — Important categories menu
 - `themes_menu.sh` — Theme selection menu
 - `trigger_menu.sh` — Triggers menu
-- `wallpaper_menu.sh` — Wallpaper selection menu
+- `wallpaper_menu.sh` — Wallpaper selection menu (matugen)
+- `rofi-read.sh` — PDF book reader menu (opens selected book from ~/Books with zathura)
 
 
 ## Keybindings

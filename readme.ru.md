@@ -31,7 +31,8 @@
 - `rofi-tabs.sh` — Меню важных категорий
 - `themes_menu.sh` — Меню выбора темы
 - `trigger_menu.sh` — Меню триггеров
-- `wallpaper_menu.sh` — Меню выбора обоев
+- `wallpaper_menu.sh` — Меню выбора обоев (matugen)
+- `rofi-read.sh` — Меню чтения PDF книг (открывает выбранную книгу из ~/Books через zathura)
 
 
 ## Горячие клавиши
