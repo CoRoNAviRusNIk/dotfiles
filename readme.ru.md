@@ -1,51 +1,61 @@
+<p>
+    <img src="Pictures/1.png" alt="Preview 1" width="400">
+    <img src="Pictures/2.png" alt="Preview 2" width="400">
+</p>
 
----
 
-![](Pictures/1.png) ![](Pictures/2.png)
-
----
-
-> 🌐 **Language / Язык:** [English](README.md) | [Русский](README.ru.md)
-
----
-
-## Описание
-
-Конфигурации для Wayland окружения на базе Hyprland с акцентом на минимализм и кастомные темы оформления.
+🌐 **Language / Язык:** [English](readme.md) | [Русский](readme.ru.md)
 
 ---
 
 ## Компоненты
 
-### Оконный менеджер
-
-- **Hyprland** - Wayland композитор
-
-### Интерфейс
-
-- **Waybar** - Панель задач
-- **Rofi** - Лаунчер приложений
-- **SwayNC** - Центр уведомлений
-
-### Терминал
-
-- **Kitty** - Терминал
-
-### Утилиты
-
-- **Fastfetch** - Системная информация
-- **Matugen** - Генератор цветовых схем
-- **Zathura** - PDF-ридер
+| Тип                | Программа            |
+| -------------------| ---------------------|
+| WM                 | hyprland             |
+| Терминал           | kitty                |
+| Оболочка           | fish                 |
+| Редактор           | nvim, vscodium       |
+| Файловый менеджер  | thunar, nautilus     |
+| Панель             | waybar               |
+| Браузер            | firefox, zen browser |
+| Просмотр изображений | ristretto, swayimg |
+| Просмотр документов | zathura             |
+| Видеоплеер         | mpv                  |
+| Музыка             | ncmpcpp              |
 
 ### Темы
-
-- **Кастомные темы** - Собственные цветовые схемы и темы оформления в директории `Themes/`
+Собственные цветовые схемы и темы находятся в директории `Themes/` (в процессе совершенствования...)
 
 ### Скрипты
-
 - `rofi-tabs.sh` — Меню важных категорий
-- `themes_menu.sh` — Меню выбора тем
+- `themes_menu.sh` — Меню выбора темы
 - `trigger_menu.sh` — Меню триггеров
 - `wallpaper_menu.sh` — Меню выбора обоев
 
----
+
+## Горячие клавиши
+
+| Сочетание         | Действие                          |
+| -------------------| -----------------------------------|
+| Super + Q         | Открыть терминал                  |
+| Super + C         | Закрыть активное окно             |
+| Super + M         | Выйти из Hyprland                 |
+| Super + E         | Thunar                            |
+| Super + Shift + E | Nautilus                          |
+| Super + B         | Firefox                           |
+| Super + Shift + B | Zen Browser                       |
+| Super + V         | Переключить плавающий режим       |
+| Super + L         | Hyprlock                          |
+| Super + W         | Перезагрузить Waybar + Hyprctl    |
+| Super + F1        | Rofi Tabs (rofi-tabs.sh)          |
+| Super + F2        | Очистить кэш шрифтов и GTK CSS    |
+| Super + K         | Hyprctl kill                      |
+| Super + R         | Rofi (drun)                       |
+| Super + .         | Rofi — выбор эмодзи               |
+| Super + N         | Rofi — калькулятор                |
+| Super + Space     | Менеджер буфера обмена (cliphist) |
+| Alt + Tab         | Hyprexpo                          |
+| Super + P         | Hyprpicker                        |
+| Print             | Скриншот всего экрана             |
+| Shift + Print     | Скриншот выделенной области       |
