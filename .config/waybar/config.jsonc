@@ -20,11 +20,9 @@
       "hyprland/language",
       "pulseaudio",
       "battery",
-      "network",
       "custom/notification",
-      "custom/cleaner",
-      "custom/text",
-      "power-profiles-daemon"
+      "network",
+      "custom/cleaner"
     ],
     "include": ["~/.config/waybar/modules.jsonc"] 
   },

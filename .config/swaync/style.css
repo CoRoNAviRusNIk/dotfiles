@@ -3,36 +3,33 @@
   --noti-border-color: #D2C5A9;
   --noti-bg: #1E2326;
   --noti-bg-alpha: 1;
-  --text-color: #D2C5A9; 
-  --text-color-disabled: rgb(80, 80, 80); 
-  --border-radius: 0px; 
+  --text-color: #D2C5A9;
+  --text-color-disabled: rgb(80, 80, 80);
+  --border-radius: 0px;
   --border: 2px solid var(--noti-border-color);
   --font-size-body: 15px;
   --font-size-summary: 16px;
   --notification-icon-size: 48px;
 }
 
-notificationwindow, blankwindow {
+notificationwindow,
+blankwindow {
   background: transparent;
 }
 
-.notification-row .notification-background .notification .notification-default-action .notification-content {
-  margin-left: 16px;
-}
-
-.notification-row .notification-background .notification .notification-default-action .notification-icon {
-  min-width: var(--notification-icon-size); 
-  min-height: var(--notification-icon-size);
-  margin-right: 10px;
+.notification-row,
+.notification-background {
+  background: transparent;
+  border: none;
+  box-shadow: none;
 }
 
 .notification-row .notification-background {
   background: transparent;
 }
 
-
 .notification-row .notification-background .notification {
-  background: #1E2326;
+  background: var(--cc-bg);
   border: var(--border);
   border-radius: var(--border-radius);
   min-width: 400px;
@@ -46,6 +43,16 @@ notificationwindow, blankwindow {
 
 .notification-row .notification-background .notification .notification-default-action:hover {
   background: rgba(40, 40, 40, 0.4);
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-icon {
+  min-width: 120px;
+  min-height: var(--notification-icon-size);
+}
+
+.notification-row .notification-background .notification .notification-default-action .notification-content {
+  flex: 1;
+  margin-left: 10px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .summary,
@@ -73,16 +80,16 @@ notificationwindow, blankwindow {
   background: var(--cc-bg);
   color: var(--text-color);
   border-radius: var(--border-radius);
-  border: 2px solid #D2C5A9;
+  border: var(--border);
   padding: 0;
   margin: 0;
-} 
+}
 
 .widget {
   color: var(--text-color);
   border-radius: var(--border-radius);
   border: 2px solid #847f73;
-  margin: 8px 8px 8px 8px;
+  margin: 8px;
 }
 
 .widget-title > label,
@@ -102,14 +109,6 @@ notificationwindow, blankwindow {
   background: rgb(180, 180, 180);
 }
 
-
 .widget-buttons-grid {
   display: none;
-}
-
-.notification-row,
-.notification-background {
-  border: none;
-  background: transparent;
-  box-shadow: none;
 }
