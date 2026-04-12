@@ -39,7 +39,6 @@ window#waybar, #waybar {
 
 
 #workspaces button {
-    color: @on_surface;
     padding: 0 2px;
 }
 
@@ -51,7 +50,7 @@ window#waybar, #waybar {
     color: #8a8a8a;
 }
 
-#power-profiles-daemon,
+#bluetooth,
 #custom-notification,
 #custom-text,
 #clock,
@@ -63,7 +62,7 @@ window#waybar, #waybar {
 #temperature,
 #pulseaudio,
 #tray {
-    padding: 0 10px;
+    padding: 0 9px;
 }
 
 #language {
@@ -74,4 +73,26 @@ window#waybar, #waybar {
     margin: 0;
     color: #464646;
 }
+
+
+#bluetooth {
+    font-size: 14px;
+}
+
+
+#pulseaudio.output.muted {
+    color: #8A8A8A;
+    opacity: 0.4;
+}
+
+#pulseaudio.output.headphone.muted {
+    color: #8A8A8A;
+}
+
+#pulseaudio.microphone.source-muted {
+    color: #8A8A8A;
+    opacity: 0.4;
+}
+
+
 

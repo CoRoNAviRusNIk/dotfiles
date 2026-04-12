@@ -1,33 +1,5 @@
 [
-  // 0
-
-  {
-    "output": "DP-1",
-    "layer": "top",
-    "position": "top",
-    "height": 22,
-    "modules-left": [
-      "hyprland/workspaces",
-      "custom/text",
-      "cpu",
-      "memory",
-      "temperature"
-    ],
-    "modules-center": ["clock"],
-    "modules-right": [
-      "tray",
-      "custom/text",
-      "hyprland/language",
-      "pulseaudio",
-      "battery",
-      "custom/notification",
-      "network",
-      "custom/cleaner"
-    ],
-    "include": ["~/.config/waybar/modules.jsonc"] 
-  },
-
-  // 1
+  // Ноут
 
   {
     "output": "eDP-1",
@@ -46,27 +18,42 @@
       "tray",
       "custom/text",
       "hyprland/language",
-      "pulseaudio",
+      "pulseaudio#output",
+      "pulseaudio#microphone",
       "battery",
-      "network",
       "custom/notification",
-      "custom/cleaner",
-      "custom/text",
-      "power-profiles-daemon"
+      "bluetooth",
+      "network"
     ],
     "include": ["~/.config/waybar/modules.jsonc"]
   },
 
-  // 2
+  // Основа
 
   {
     "output": "HDMI-A-1",
     "layer": "top",
     "position": "top",
     "height": 28,
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": [
+      "hyprland/workspaces",
+      "custom/text",
+      "cpu",
+      "memory",
+      "temperature"
+    ],
     "modules-center": ["clock"],
-    "modules-right": ["tray", "custom/text", "hyprland/language", "power-profiles-daemon"],
+    "modules-right": [
+      "tray",
+      "custom/text",
+      "hyprland/language",
+      "pulseaudio#output",
+      "pulseaudio#microphone",
+      "battery",
+      "custom/notification",
+      "bluetooth",
+      "network"
+    ],
     "include": ["~/.config/waybar/modules.jsonc"]
   }
 ]

@@ -21,9 +21,10 @@
   },
 
 
-"pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-bluetooth": "{icon} {volume}%",
+"pulseaudio#output": {
+    "format": "{icon}",
+    "format-bluetooth": "{icon}",
+    "tooltip-format": "{volume}%",
     "format-muted": "",
     "format-icons": {
         "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
@@ -38,14 +39,26 @@
         "default": ["", ""]
     },
     "scroll-step": 1,
-    "on-click": "pavucontrol",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "on-click-right": "pavucontrol",
     "ignored-sinks": ["Easy Effects Sink"]
+},
+
+"pulseaudio#microphone": {
+    "format": "{format_source}",
+    "format-source": "",
+    "format-source-muted": "",
+    "tooltip-format": "{volume}%",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1%+",
+    "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1%-",
+    "scroll-step": 1
 },
 
 
 
   "clock": {
-    "format": "󱑂 {:%A %H:%M}",
+    "format": "󱑂 {:%H:%M | %d.%m}",
     "tooltip-format": "{calendar}",
     "on-click": "gnome-clocks",
     "calendar": {
@@ -65,7 +78,7 @@
     "tooltip-format-wifi": "{essid} ({signalStrength}%)",
     "tooltip-format-ethernet": "{ifname}",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "nm-connection-editor"
+    "on-click": "networkmanager_dmenu"
   },
 
   "hyprland/language": {
@@ -78,7 +91,7 @@
   },
 
   "battery": {
-    "format": "{icon} {capacity}%",
+    "format": "{icon}",
     "bat": "BAT0",
     "interval": 60,
     "states": {
@@ -127,6 +140,17 @@
     "interval": 10,
     "tooltip": false
 },
+
+"bluetooth": {
+	"format": "",
+	"format-connected": "",
+	"format-connected-battery": " {device_battery_percentage}%",
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+},
+
 
   "custom/text": { "format": "::" }
 
