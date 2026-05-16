@@ -61,3 +61,12 @@ Own color schemes and themes located in the `Themes/` directory (in the process 
 | Super + P         | Hyprpicker                   |
 | Print             | Screenshot entire screen     |
 | Shift + Print     | Screenshot region            |
+
+---
+
+## Old
+
+<p>
+    <img src="Pictures/1-old.png" alt="Preview 1" width="400">
+    <img src="Pictures/2-old.png" alt="Preview 1" width="400">
+</p>

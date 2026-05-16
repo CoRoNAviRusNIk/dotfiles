@@ -61,3 +61,12 @@
 | Super + P         | Hyprpicker                        |
 | Print             | Скриншот всего экрана             |
 | Shift + Print     | Скриншот выделенной области       |
+
+---
+
+## Старое
+
+<p>
+    <img src="Pictures/1-old.png" alt="Preview 1" width="400">
+    <img src="Pictures/2-old.png" alt="Preview 1" width="400">
+</p>
