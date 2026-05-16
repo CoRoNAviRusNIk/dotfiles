@@ -1,6 +1,5 @@
 <p>
-    <img src="Pictures/1.png" alt="Preview 1" width="400">
-    <img src="Pictures/2.png" alt="Preview 2" width="400">
+    <img src="Pictures/1.png" alt="Preview 1" width="800">
 </p>
 
 
