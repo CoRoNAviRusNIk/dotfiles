@@ -1,74 +1,76 @@
+/* === Variables === */
 :root {
-  --cc-bg: #1E2326;
-  --noti-border-color: #D2C5A9;
-  --noti-bg: #1E2326;
-  --noti-bg-alpha: 1;
-  --text-color: #D2C5A9;
+  --cc-bg:               #1E2326;
+  --text-color:          #D2C5A9;
   --text-color-disabled: rgb(80, 80, 80);
-  --border-radius: 0px;
-  --border: 2px solid var(--noti-border-color);
-  --font-size-body: 15px;
-  --font-size-summary: 16px;
-  --notification-icon-size: 48px;
+  --border-color:        rgb(80, 80, 80);
+  --border-width:        0px;
+  --border-radius:       4px;
+  --font-size-body:      13px;
+  --font-size-summary:   14px;
+  --icon-size:           48px;
+  --noti-min-width:      400px;
+  --transition-speed:    0.15s;
 }
 
+/* === Transparent base === */
 notificationwindow,
-blankwindow {
-  background: transparent;
-}
-
+blankwindow,
 .notification-row,
-.notification-background {
+.notification-background,
+.notification-row .notification-background {
   background: transparent;
   border: none;
   box-shadow: none;
 }
 
-.notification-row .notification-background {
-  background: transparent;
-}
-
-.notification-row .notification-background .notification {
-  background: var(--cc-bg);
-  border: var(--border);
+/* === Notification card === */
+.notification {
+  background:    var(--cc-bg);
+  border:        var(--border-width) solid var(--border-color);
   border-radius: var(--border-radius);
-  min-width: 400px;
+  min-width:     var(--noti-min-width);
 }
 
-.notification-row .notification-background .notification .notification-default-action {
-  color: var(--text-color);
+.notification-default-action {
+  color:      var(--text-color);
   background: transparent;
-  padding: 14px 18px 14px 6px;
+  padding:    14px;
+  transition: background var(--transition-speed) ease;
 }
 
-.notification-row .notification-background .notification .notification-default-action:hover {
+.notification-icon {
+  min-width: var(--icon-size);
+}
+
+.notification-content {
+  flex: 1;
+}
+
+
+
+.notification-default-action:hover {
   background: rgba(40, 40, 40, 0.4);
 }
 
-.notification-row .notification-background .notification .notification-default-action .notification-icon {
-  min-width: 120px;
-  min-height: var(--notification-icon-size);
+/* === Notification text === */
+.notification-content .summary,
+.notification-content .body,
+.notification-content .time {
+  color:       var(--text-color);
+  background:  transparent;
+  font-family: "JetBrainsMono Nerd Font Propo";
 }
 
-.notification-row .notification-background .notification .notification-default-action .notification-content {
-  flex: 1;
-  margin-left: 10px;
-}
-
-.notification-row .notification-background .notification .notification-default-action .notification-content .summary,
-.notification-row .notification-background .notification .notification-default-action .notification-content .body,
-.notification-row .notification-background .notification .notification-default-action .notification-content .time {
-  color: var(--text-color);
-  background: transparent;
-  font-family: "Terminus (TTF)";
-}
-
+/* === Close button === */
 .close-button {
   background: transparent;
-  color: var(--text-color);
-  border: none;
-  margin: 4px;
-  padding: 4px;
+  color:      var(--text-color);
+  border:     none;
+  margin:     4px;
+  padding:    4px;
+  transition: background var(--transition-speed) ease,
+              opacity    var(--transition-speed) ease;
 }
 
 .close-button:hover {
@@ -76,39 +78,44 @@ blankwindow {
   opacity: 1;
 }
 
+/* === Control center === */
 .control-center {
-  background: var(--cc-bg);
-  color: var(--text-color);
+  background:    var(--cc-bg);
+  color:         var(--text-color);
   border-radius: var(--border-radius);
-  border: var(--border);
-  padding: 0;
-  margin: 0;
+  border:        var(--border-width) solid var(--border-color);
+  box-shadow:    5px 5px 40px -8px rgba(0, 0, 0, 0.27);
+  padding:       0;
+  margin:        0;
 }
 
+/* === Widgets === */
 .widget {
-  color: var(--text-color);
+  color:         var(--text-color);
   border-radius: var(--border-radius);
-  border: 2px solid #847f73;
-  margin: 8px;
+  border:        var(--border-width) solid var(--border-color);
+  margin:        5px;
 }
 
 .widget-title > label,
 .widget-dnd label,
 .widget-inhibitors > label {
-  color: var(--text-color);
+  color:       var(--text-color);
   font-weight: bold;
-  font-size: var(--font-size-summary);
+  font-size:   var(--font-size-summary);
 }
 
+/* === DnD toggle === */
 .widget-dnd switch slider {
   background: rgb(100, 100, 100);
-  border: 1px solid rgb(60, 60, 60);
+  border:     1px solid rgb(60, 60, 60);
 }
 
 .widget-dnd switch:checked slider {
   background: rgb(180, 180, 180);
 }
 
+/* === Hidden === */
 .widget-buttons-grid {
   display: none;
 }

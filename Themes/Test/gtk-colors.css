@@ -46,15 +46,13 @@ box-shadow: none;
 .thunar,
 .thunar window,
 treeview.view {
-font-family: "JetBrainsMono Nerd Font Propo";
-font-size: 12px;
+font-family: "Terminus (TTF)"
 }
 
 /* Для GNOME Clocks (обычно используется такой класс) */
 .clocks-view,
 #clocks-pannel {
-font-family: "JetBrainsMono Nerd Font Propo";
-font-size: 12px;
+font-family: "Terminus (TTF)"
 }
 
 /* Для Nautilus */
@@ -63,6 +61,5 @@ nautilus-window,
 .nautilus-list-view,
 .nautilus-grid-view,
 window#nautilus-window {
-font-family: "JetBrainsMono Nerd Font Propo";
-font-size: 12px;
+font-family: "Terminus (TTF)";
 }

@@ -16,7 +16,7 @@ window {
     
     width:               300px;
     
-    border:            2px;
+    border:            0px;
     border-color:      @highlight-color;
     border-radius:     0px;
     

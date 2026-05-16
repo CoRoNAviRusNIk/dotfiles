@@ -3,28 +3,15 @@
     "disable-scroll": true,
     "all-outputs": true,
     "sort-by-number": true,
-    "format": "{icon}",
-    "max-length": 10,
-    "icon-size": 8,
-    "format-icons": {
-          "1": "1",
-          "2": "2",
-          "3": "3",
-          "4": "4",
-          "5": "5",
-          "6": "6",
-          "7": "7",
-          "8": "8",
-          "9": "9",
-          "0": "0"
-    }
+    "format": "{name}",
+    "max-length": 10
   },
 
 
 "pulseaudio#output": {
     "format": "{icon}",
     "format-bluetooth": "{icon}",
-    "tooltip-format": "{volume}%",
+    "tooltip-format": "<span size='large' weight='bold'>Вывод звука</span>\n<span color='#89b4fa'>Громкость:</span> {volume}%\n<span color='#a6e3a1'>Устройство:</span> {desc}",
     "format-muted": "",
     "format-icons": {
         "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
@@ -48,7 +35,7 @@
     "format": "{format_source}",
     "format-source": "",
     "format-source-muted": "",
-    "tooltip-format": "{volume}%",
+    "tooltip-format": "<span size='large' weight='bold'>Микрофон</span>\n<span color='#89b4fa'>Громкость:</span> {volume}%\n<span color='#f38ba8'>Устройство:</span> {desc}",
     "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
     "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1%+",
     "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SOURCE@ 1%-",
@@ -122,7 +109,8 @@
   "cpu": {
     "interval": 5,
     "format": " {usage}%",
-    "max-length": 10
+    "max-length": 10,
+    "on-click": "kitty btop"
   },
 
 "memory": {
@@ -133,7 +121,6 @@
 
 "temperature": {
     "thermal-zone": 2,
-    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
     "format-critical": " {temperatureC}°!!!",
     "format": " {temperatureC}°",
@@ -148,7 +135,8 @@
 	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
 	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%"
+	"tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+	"on-click": "blueman-manager"
 },
 
 

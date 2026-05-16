@@ -5,7 +5,8 @@
     "output": "eDP-1",
     "layer": "top",
     "position": "top",
-    "height": 28,
+    "height": 26,
+    "exclusive": true,
     "modules-left": [
       "hyprland/workspaces",
       "custom/text",
@@ -34,7 +35,8 @@
     "output": "HDMI-A-1",
     "layer": "top",
     "position": "top",
-    "height": 28,
+    "height": 26,
+    "exclusive": true,
     "modules-left": [
       "hyprland/workspaces",
       "custom/text",
